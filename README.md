@@ -1,7 +1,7 @@
 # PC/H5快速开发模版
 
 # 技术栈
-vite + vue + eslint + i18n + theme
+vite + vue + eslint + i18n + vuetify
 
 # 功能
 + eslint
