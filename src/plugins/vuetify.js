@@ -6,9 +6,9 @@ import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 
 export default createVuetify({
-    install(vue) {
+    install(app) {
         const vuetify = createVuetify()
 
-        vue.use(vuetify)
+        app.use(vuetify)
     }
 })

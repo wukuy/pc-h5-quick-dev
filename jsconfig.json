@@ -2,9 +2,7 @@
     "compilerOptions": {
         "baseUrl": "./",
         "types": [
-            "@dcloudio/types",
-            "miniprogram-api-typings",
-            "mini-types"
+            "@intlify/vite-plugin-vue-i18n/client"
         ],
         "paths": {
             "@/*": ["src/*"],

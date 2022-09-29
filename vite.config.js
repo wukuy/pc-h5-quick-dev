@@ -2,7 +2,12 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vuetify from 'vite-plugin-vuetify'
 import eslint from 'vite-plugin-eslint'
+import components from 'unplugin-vue-components/vite'
 import path from 'path'
+import Pages from 'vite-plugin-pages'
+import Layouts from 'vite-plugin-vue-layouts'
+import AutoImport from 'unplugin-auto-import/vite'
+import vueI18n from '@intlify/vite-plugin-vue-i18n'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -10,9 +15,25 @@ export default defineConfig({
         host: '0.0.0.0'
     },
     plugins: [
+        components(),
         vue(),
         eslint(),
-        vuetify()
+        vuetify(),
+        Pages(),
+        Layouts(),
+        AutoImport({
+            dts: true,
+            eslintrc: {
+                enabled: true
+            },
+            imports: [
+                'vue',
+                'vue-i18n'
+            ]
+        }),
+        vueI18n({
+            include: path.resolve(__dirname, './src/locales/**')
+        })
     ],
     resolve: {
         alias: {

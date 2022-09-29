@@ -6,7 +6,8 @@ module.exports = {
     },
     extends: [
         'plugin:vue/vue3-recommended',
-        'standard'
+        'standard',
+        './.eslintrc-auto-import.json'
     ],
     overrides: [
     ],
@@ -63,9 +64,5 @@ module.exports = {
                 max: 1
             }
         }]
-    },
-    globals: {
-        uni: 'writable',
-        getCurrentPages: true
     }
 }
