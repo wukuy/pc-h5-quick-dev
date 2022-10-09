@@ -1,0 +1,18 @@
+{
+    "vite.autoStart": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+      },
+    "eslint.validate": [
+        "javascript",
+        "vue",
+        "html"
+    ],
+    "vetur.grammar.customBlocks": {
+        "route": "json"
+    },
+    "i18n-ally.localesPaths": [
+      "src/locales"
+    ]
+  }
+  
