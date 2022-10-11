@@ -25,3 +25,4 @@ vite + vue + eslint + i18n + vuetify
 + 自动生成router
 + 自动加载组件
 + sass
+
