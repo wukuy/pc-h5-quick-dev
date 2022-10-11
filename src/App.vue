@@ -1,7 +1,9 @@
 <template>
     <v-app>
         <v-main>
-            <RouterView />
+            <v-theme-provider theme="darkTheme">
+                <RouterView />
+            </v-theme-provider>
         </v-main>
     </v-app>
 </template>

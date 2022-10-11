@@ -22,13 +22,14 @@ export default defineConfig({
         Pages(),
         Layouts(),
         AutoImport({
-            dts: true,
+            dts: false,
             eslintrc: {
                 enabled: true
             },
             imports: [
                 'vue',
-                'vue-i18n'
+                'vue-i18n',
+                'vue-router'
             ]
         }),
         vueI18n({
