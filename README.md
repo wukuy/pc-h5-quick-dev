@@ -67,11 +67,3 @@ src
 │   └── webfontloader.js
 └── style.css
 ```
-
-## 路由说明
-
-
-## 组件自动导入
-
-
-## 
