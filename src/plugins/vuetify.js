@@ -1,6 +1,7 @@
 // Styles
 import '@mdi/font/css/materialdesignicons.css'
 import 'vuetify/styles'
+import 'assets/styles/reset-vuefity.scss'
 
 // Vuetify
 import { createVuetify } from 'vuetify'
@@ -15,7 +16,8 @@ export default {
                         dark: true,
                         colors: {
                             primary: '#00FF1A',
-                            background: '#000'
+                            background: '#000',
+                            'on-surface': 'rgba(0,0,0,0.6)'
                         }
                     }
                 }

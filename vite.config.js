@@ -22,7 +22,7 @@ export default defineConfig({
         Pages(),
         Layouts(),
         AutoImport({
-            dts: false,
+            dts: true,
             eslintrc: {
                 enabled: true
             },

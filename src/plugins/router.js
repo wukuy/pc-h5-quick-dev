@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { setupLayouts } from 'virtual:generated-layouts'
-import generatedRoutes from 'virtual:generated-pages'
+import pages from '~pages'
 
-const routes = setupLayouts(generatedRoutes)
+const routes = setupLayouts(pages)
 
 export default {
     install(app) {
         const router = createRouter({
-            history: createWebHistory(),
+            history: createWebHistory(import.meta.env.VITE_API_PUBLIC_PATH),
             routes
         })
 

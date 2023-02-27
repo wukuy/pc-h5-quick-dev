@@ -15,9 +15,6 @@ export default {
 </script>
 
 <style lang="scss">
-@media screen and (min-width: 750px) {
-    html {
-        font-size: 37.5PX !important;
-    }
-}
+@import '@/assets/styles/default.scss';
+
 </style>

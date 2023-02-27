@@ -62,7 +62,7 @@ axios.interceptors.response.use((res) => {
 
 export default function request({ url, data = {}, headers, showToast = true, upload = false, filePath, formData, name, ...otherOptions }) {
     return axios({
-        url: new URL(url, ApiUrl).href,
+        url: ApiUrl + url,
         data,
         // 文件上传特有参数
         name,
@@ -71,6 +71,7 @@ export default function request({ url, data = {}, headers, showToast = true, upl
         showToast,
         ...otherOptions,
         headers: {
+            token: localStorage.getItem('token'),
             ...headers
         }
     })

@@ -1,0 +1,13 @@
+.v-btn--variant-outlined {
+    border-color: rgb(var(--v-theme-primary)) !important;
+}
+.v-btn {
+    font-weight: 600 !important;
+}
+
+.v-overlay-container {
+    .v-overlay__scrim {
+        background: rgba($color: #000, $alpha: 1) !important;
+        opacity: 0.6;
+    }
+}
